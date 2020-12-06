@@ -1,0 +1,57 @@
+{
+  "menu": {
+    "header": "Adobe SVG Viewer",
+    "item": [
+      {
+        "action": "Open" ,
+        "id": "Open",
+        "content" : "Open"
+      },
+      {
+        "action":"OpenNew" ,
+        "id": "OpenNew",
+        "content" : "OpenNew"
+      },
+      {
+        "action":"ZoomIn" ,
+        "id": "ZoomIn" ,
+        "content" : "ZoomIn"
+      },
+      {
+        "action":"ZoomOut" ,
+        "id": "ZoomOut",
+        "content" : "ZoomOut"
+      },
+      {
+        "action": "OriginalView",
+        "id": "OriginalView",
+        "content" : "Original View"
+      },
+      {
+        "action":"Quality" ,
+        "id": "Quality",
+        "content" : "Quality"
+      },
+      {
+        "action":"Pause" ,
+        "id": "Pause",
+        "content" : "Pause"
+      },
+      {
+        "action":"Mute" ,
+        "id": "Mute",
+        "content" : "Mute"
+      },
+      {
+        "action":"Find" ,
+        "id": "Find",
+        "content" : "Find..."
+      },
+      {
+        "action":"FindAgain" ,
+        "id": "FindAgain",
+        "content" : "Find Again"
+      }
+    ]
+  }
+}

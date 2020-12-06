@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE web-app
+        PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN"
+        "http://java.sun.com/j2ee/dtds/web-app_2.2.dtd">
+<web-app>
+    <servlet>
+        <servlet-name>cofaxCDS</servlet-name>
+        <servlet-class>org.cofax.cds.CDSServlet</servlet-class>
+        <init-param>
+            <configName>configGlossary:installationAt</configName>
+            <configValue>Philadelphia, PA</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>configGlossary:adminEmail</configName>
+            <configValue>ksm@pobox.com</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>configGlossary:poweredBy</configName>
+            <configValue>Cofax</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>configGlossary:poweredByIcon</configName>
+            <configValue>/images/cofax.gif</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>configGlossary:staticPath</configName>
+            <configValue>/content/static</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>templateProcessorClass</configName>
+            <configValue>org.cofax.WysiwygTemplate</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>templateLoaderClass</configName>
+            <configValue>org.cofax.FilesTemplateLoader</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>templatePath</configName>
+            <configValue>templates</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>templateOverridePath</configName>
+            <configValue></configValue>
+        </init-param>
+
+        <init-param>
+            <configName>defaultListTemplate</configName>
+            <configValue>listTemplate.htm</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>defaultFileTemplate</configName>
+            <configValue>articleTemplate.htm</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>useJSP</configName>
+            <configValue>false</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>jspListTemplate</configName>
+            <configValue>listTemplate.jsp</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>jspFileTemplate</configName>
+            <configValue>articleTemplate.jsp</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>cachePackageTagsTrack</configName>
+            <configValue>200</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>cachePackageTagsStore</configName>
+            <configValue>200</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>cachePackageTagsRefresh</configName>
+            <configValue>60</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>cacheTemplatesTrack</configName>
+            <configValue>100</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>cacheTemplatesStore</configName>
+            <configValue>50</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>cacheTemplatesRefresh</configName>
+            <configValue>15</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>cachePagesTrack</configName>
+            <configValue>200</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>cachePagesStore</configName>
+            <configValue>100</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>cachePagesRefresh</configName>
+            <configValue>10</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>cachePagesDirtyRead</configName>
+            <configValue>10</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>searchEngineListTemplate</configName>
+            <configValue>forSearchEnginesList.htm</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>searchEngineFileTemplate</configName>
+            <configValue>forSearchEngines.htm</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>searchEngineRobotsDb</configName>
+            <configValue>WEB_INF/robots.db</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>useDataStore</configName>
+            <configValue>true</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>dataStoreClass</configName>
+            <configValue>org.cofax.SqlDataStore</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>redirectionClass</configName>
+            <configValue>org.cofax.SqlRedirection</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>dataStoreName</configName>
+            <configValue>confax</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>dataStoreDriver</configName>
+            <configValue>com.microsoft.jdbc.sqlserver.SQLServerDriver</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>dataStoreUrl</configName>
+            <configValue>jdbc:microsoft:sqlserver://LOCALHOST:1433;DatabaseName=goon</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>dataStoreUser</configName>
+            <configValue>sa</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>dataStorePassword</configName>
+            <configValue>SET NOCOUNT ON;select test='test'</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>dataStoreTestQuery</configName>
+            <configValue>SET NOCOUNT ON; select test='test'</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>dataStoreLogFile</configName>
+            <configValue>/usr/local/tomcat/logs/datastore.log</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>dataStoreInitConns</configName>
+            <configValue>10</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>dataStoreMaxConns</configName>
+            <configValue>100</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>datStoreConnUsageLimit</configName>
+            <configValue>100</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>dataStoreLogLevel</configName>
+            <configValue>debug</configValue>
+        </init-param>
+
+        <init-param>
+            <configName>maxUrlLength</configName>
+            <configValue>500</configValue>
+        </init-param>
+    </servlet>
+
+    <servlet>
+        <servlet-name>confaxEmail</servlet-name>
+        <servlet-class>org.cofax.cds.EmailServlet</servlet-class>
+        <init-param>
+            <mailHost>mail1</mailHost>
+            <mailHostOverride>mail2</mailHostOverride>
+        </init-param>
+    </servlet>
+
+    <servlet>
+        <servlet-name>cofaxAdmin</servlet-name>
+        <servlet-class>org.cofax.cds.AdminServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>fileServlet</servlet-name>
+        <servlet-class>org.cofax.cds.FileServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>cofaxTools</servlet-name>
+        <servlet-class>org.cofax.cms.CofaxToolsServlet</servlet-class>
+        <init-param>
+            <templatePath>toolstemplates/</templatePath>
+            <log>1</log>
+            <logLocation>/usr/local/tomcat.logs/CofaxTools.log</logLocation>
+            <dataLog>1</dataLog>
+            <dataLogLocation>/usr/local/tomcat/logs/dataLog.log</dataLogLocation>
+            <dataLogMaxSize></dataLogMaxSize>
+            <removePageCache>/content/admin/remove?cache=pages&amp;id=</removePageCache>
+            <fileTransferFolder>/usr/local/tomcat/webapps/content/fileTransferFilder</fileTransferFolder>
+            <loolInContext>1</loolInContext>
+            <adminGroupID>4</adminGroupID>
+            <betaServer>true</betaServer>
+        </init-param>
+    </servlet>
+
+    <servlet-mapping>
+        <cofaxCDS>/</cofaxCDS>
+        <cofaxEmail>/confaxutil/aemail/*</cofaxEmail>
+        <cofaxAdmin>/admin/*</cofaxAdmin>
+        <fileServlet>/static/*</fileServlet>
+        <cofaxTools>/tools/*</cofaxTools>
+    </servlet-mapping>
+
+    <taglib>
+        <taglib-uri>cofax.tld</taglib-uri>
+        <taglib-location>/WEB-INF/tlds/confax.tld</taglib-location>
+    </taglib>
+</web-app>

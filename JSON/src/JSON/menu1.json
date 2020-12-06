@@ -1,0 +1,27 @@
+{"menu": {
+  "header": "SVG Viewer",
+  "item": [
+    {"id": "open"},
+    {"id":"OpenNew"},
+    null,
+    {"id": "ZoomIn"},
+    {"id": "ZoomOut"},
+    {"id": "OriginalView"},
+    null,
+    {"id": "Quality"},
+    {"id": "Pause"},
+    {"id": "Mute"},
+    null,
+    {"id": "Find"},
+    {"id": "FindAgain"},
+    {"id": "Copy"},
+    {"id": "CopyAgain"},
+    {"id": "CopySVG"},
+    {"id": "ViewSVG"},
+    {"id": "ViewSource"},
+    {"id": "SaveAs"},
+    null,
+    {"id": "help"},
+    {"id": "About"}
+  ]
+}}
